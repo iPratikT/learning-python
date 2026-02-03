@@ -17,6 +17,9 @@ print(mylist)
 mylist.insert(1, 4)
 print(mylist)
 
+#this will insert a random string at second last position of the list
+mylist.insert(-1, "world")
+
 #this will print the length of the list
 print("Length of list:", len(mylist))
 
@@ -29,9 +32,13 @@ print("Sorted list:", mylist)
 mylist.reverse()
 print("Reversed list:", mylist)
 
-#this will extend the list by adding multiple elements
+#this will extend the list by adding multiple elements -> it is an upgrade to using append in a loop
 mylist.extend([5, 6, 7])
 print("Extended list:", mylist)
+
+#this will also extend the list using + operator
+mylist = mylist + [8, 9, 10]
+print("Extended list using + :", mylist)
 
 #this will count the occurrences of 4 in the list
 print("Index of 4:", mylist.index(4))
